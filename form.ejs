@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+ <html lang="en">
+
+ <head>
+
+ <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Studen<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Sales Manager</title>
+        <link rel="stylesheet" href="/styles.css"> <!-- This line links to an external stylesheet for styling -->
+    </head>
+    <body>
+        <h1>Add Sales Manager</h1>
+        <form action="/add-sales-manager" method="post"> <!-- This form sends data to the "/add-sales-manager" route using the HTTP POST method -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> <!-- Input field for entering the sales manager's name -->
+            <br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required> <!-- Input field for entering the sales manager's age -->
+            <br><br>
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required> <!-- Input field for entering the sales manager's department -->
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <!-- Input field for entering the sales manager's email -->
+            <br><br>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required> <!-- Input field for entering the sales manager's phone number -->
+            <br><br>
+            <label for="hireDate">Hire Date:</label>
+            <input type="date" id="hireDate" name="hireDate" required> <!-- Input field for entering the sales manager's hire date -->
+            <br><br>
+            <label for="performanceRating">Performance Rating:</label>
+            <input type="number" id="performanceRating" name="performanceRating" min="0" max="10"> <!-- Input field for entering the sales manager's performance rating -->
+            <br><br>
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="address[street]" required> <!-- Input field for entering the sales manager's street address -->
+            <br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="address[city]" required> <!-- Input field for entering the sales manager's city -->
+            <br><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="address[state]" required> <!-- Input field for entering the sales manager's state -->
+            <br><br>
+            <label for="zipCode">Zip Code:</label>
+            <input type="text" id="zipCode" name="address[zipCode]" required> <!-- Input field for entering the sales manager's zip code -->
+            <br><br>
+            <input type="submit" value="Add Sales Manager"> <!-- Submit button to add the sales manager -->
+        </form>
+    </body>
+    </html>
+    t</title>
+
+ <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+
+ <h1>Add Student</h1>
+
+<form action="/add" method="post">
+
+<label for="name">Name:</label>
+
+<input type="text" id="name" name="name" required>
+
+<br>
+
+<br>
+
+ <label for="age">Age:</label>
+
+ <input type="number" id="age" name="age" required>
+
+<br>
+
+<br>
+
+ <label for="grade">Grade:</label>
+
+<input type="text" id="grade" name="grade" required>
+
+<br>
+
+<br>
+
+<input type="submit" value="Add Student">
+
+ </form>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Managers</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- This line links to an external stylesheet for styling -->
+</head>
+<body>
+    <h1>All Sales Managers</h1>
+    <ul>
+        <% salesManagers.forEach(salesManager => { %> <!-- This loop iterates over each sales manager in the "salesManagers" array -->
+            <li>
+                <%= salesManager.name %> - <%= salesManager.age %> years old, Department: <%= salesManager.department %><br>
+                Email: <%= salesManager.email %>, Phone: <%= salesManager.phoneNumber %><br>
+                Hire Date: <%= salesManager.hireDate %>, Performance Rating: <%= salesManager.performanceRating %><br>
+                Address: <%= salesManager.address.street %>, <%= salesManager.address.city %>, <%= salesManager.address.state %>, <%= salesManager.address.zipCode %>
+            </li> <!-- This line displays each sales manager's information -->
+        <% }) %>
+    </ul>
+    <a href="/add-sales-manager">Add Sales Manager</a> <!-- This link directs to the route for adding a new sales manager -->
+</body>
+</html>
